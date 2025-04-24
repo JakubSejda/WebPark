@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WebPark Studio - tvorba moderních webových stránek a eshopů">
+    <title>WebPark Studio | Tvorba webových stránek na míru</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Favicon-->
+    <!-- základní .ico -->
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <!-- doporučené moderní PNG (32×32) -->
+    <link rel="icon" href="/img/favicon-32x32.png" sizes="32x32" type="image/png">
+
+    <!-- Apple Touch Icon pro iOS -->
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" sizes="180x180">
+
+</head>
+<body>
+
+<!-- Fixní hlavička -->
+<header class="hlavicka">
+    <div class="container animate">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-webpark.svg" alt="WebPark Studio">
+            </a>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#domu">Domů</a></li>
+                <li><a href="#onas">O nás</a></li>
+                <li><a href="#konkurence">Proč právě my?</a></li>
+                <li><a href="#sluzby">Služby</a></li>
+                <li><a href="#projekty">Projekty</a></li>
+                <li><a href="#recenze">Recenze</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div class="tlacitko-hlavicka">
+            <a href="#kontakt" class="btn">Nezávazná poptávka zdarma</a>
+        </div>
+
+        <!-- Burger ikona (pro mobil) -->
+        <div class="menu-ikona" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<!-- Obsah stránky – odsazený kvůli fixnímu headeru -->
+<main style="margin-top: 100px;">
+    <!-- Hero sekce -->
+    <section class="hero" id="domu">
+        <div class="container hero-obsah animate">
+            <div class="leva">
+                <h1 class="animate fadeInLeft">WebPark</h1>
+                <h1 class="specialni animate fadeInRight">Studio</h1>
+                <p class="animate zoomIn">
+                    Tvorba moderních webů a e-shopů pro firmy, živnostníky a organizace, kteří chtějí rychle růst a zvýšit zisky! Vstupte do digitální budoucnosti s WebPark Studiem a posuňte své podnikání na novou úroveň.
+                </p>
+            <a href="#kontakt" class="btn">Nezávazná poptávka zdarma</a>
+            </div>
+            <div class="prava animate zoomIn">
+                <img src="img/logo-webpark.svg" alt="Tvorba webu - WebPark Studio">
+            </div>
+        </div>
+    </section>
+
+    <!--Dovednosti-->
+    <section class="dovednosti" id="dovednosti">
+        <div class="container">
+          <h2 class="animate zoomIn">Zde je řada oblastí, ve kterých si umíme poradit</h2>
+            <div class="kolotoc">
+                <div class="dovednosti-list">
+                    <a class="dovednost" href="#">
+                    <span class="dovednost-icon">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-wordpress" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M61.7 169.4l101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6zm337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7zm-139.9 29.3l-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9l-65.4-179.2zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1zM504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248zm-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6z"></path></svg>
+                    </span>
+                    <span class="dovednost-text">WordPress</span>
+                    </a>
+                    
+                    <a class="dovednost" href="#">
+                    <span class="dovednost-icon">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-elementor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M425.6 32H22.4C10 32 0 42 0 54.4v403.2C0 470 10 480 22.4 480h403.2c12.4 0 22.4-10 22.4-22.4V54.4C448 42 438 32 425.6 32M164.3 355.5h-39.8v-199h39.8v199zm159.3 0H204.1v-39.8h119.5v39.8zm0-79.6H204.1v-39.8h119.5v39.8zm0-79.7H204.1v-39.8h119.5v39.8z"></path></svg>
+                    </span>
+                    <span class="dovednost-text">Elementor</span>
+                    </a>
+                    <a class="dovednost" href="#">
+                        <span class="dovednost-icon">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-html5" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg>                </span>
+                        <span class="dovednost-text">HTML</span>
+                    </a>
+                    <a class="dovednost" href="#">
+                        <span class="dovednost-icon">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-html5" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg>                </span>
+                        <span class="dovednost-text">CSS</span>
+                    </a>
+                    <a class="dovednost" href="#">
+                        <span class="dovednost-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fab-php" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z"></path></svg>                </span>
+                        <span class="dovednost-text">PHP</span>
+                    </a>
+                    <a class="dovednost" href="#">
+                        <span class="dovednost-icon">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-js" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"></path></svg>                </span>
+                        <span class="dovednost-text">JavaScript</span>
+                    </a>
+                    <a class="dovednost" href="#">
+                        <span class="dovednost-icon">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-figma" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M277 170.7A85.35 85.35 0 0 0 277 0H106.3a85.3 85.3 0 0 0 0 170.6 85.35 85.35 0 0 0 0 170.7 85.35 85.35 0 1 0 85.3 85.4v-256zm0 0a85.3 85.3 0 1 0 85.3 85.3 85.31 85.31 0 0 0-85.3-85.3z"></path></svg>                </span>
+                        <span class="dovednost-text">Figma</span>
+                    </a>
+                    <a class="dovednost" href="#">
+                        <span class="dovednost-icon">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-paint-brush" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M167.02 309.34c-40.12 2.58-76.53 17.86-97.19 72.3-2.35 6.21-8 9.98-14.59 9.98-11.11 0-45.46-27.67-55.25-34.35C0 439.62 37.93 512 128 512c75.86 0 128-43.77 128-120.19 0-3.11-.65-6.08-.97-9.13l-88.01-73.34zM457.89 0c-15.16 0-29.37 6.71-40.21 16.45C213.27 199.05 192 203.34 192 257.09c0 13.7 3.25 26.76 8.73 38.7l63.82 53.18c7.21 1.8 14.64 3.03 22.39 3.03 62.11 0 98.11-45.47 211.16-256.46 7.38-14.35 13.9-29.85 13.9-45.99C512 20.64 486 0 457.89 0z"></path></svg>                </span>
+                        <span class="dovednost-text">Canva</span>
+                    </a>
+                    <a class="dovednost" href="#">
+                        <span class="dovednost-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>                </span>
+                        <span class="dovednost-text">Instagram</span>
+                    </a>
+                    <a class="dovednost" href="#">
+                        <span class="dovednost-icon">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-facebook" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>                </span>
+                        <span class="dovednost-text">Facebook</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--O nás-->
+    <section class="about-us" id="onas">
+        <div class="container about-flex">
+          <!-- Levá polovina: text + čísla -->
+          <div class="about-content animate fadeInLeft">
+            <ul class="about-icon-list">
+              <li>
+                <i class="icon icon-planet-earth" aria-hidden="true"></i>
+                O nás
+              </li>
+            </ul>
+      
+            <h2 class="about-heading">
+              Nejsme agentura, jsme studio!
+            </h2>
+      
+            <p class="about-text">
+              Díky dlouholetým zkušenostem a týmu specialistů stavíme weby a e‑shopy, které skutečně fungují. Naše projekty šetří váš čas i peníze a přinášejí hmatatelné výsledky.
+              <br>
+              <br>
+              Nejsme velká <strong>agentura</strong>, která má hromadu klientů a nemá čas se Vám věnovat. Jsme tři kamarádi, kteří dali dohromady své schopnosti a společně založili <strong>Studio</strong> ve kterém se Vašemu projektu budeme věnovat jako kdyby to bylo naše vlastní podnikání!
+            </p>
+      
+            <div class="about-stats">
+              <div class="stat">
+                <div class="stat-number">99<span class="stat-suffix">%</span></div>
+                <div class="stat-label">Spokojených zákazníků</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">93<span class="stat-suffix">%</span></div>
+                <div class="stat-label">Úspěšně dokončených zakázek</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">55<span class="stat-suffix">%</span></div>
+                <div class="stat-label">Zaplněných kapacit</div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Pravá polovina o nás: obrázek -->
+          <div class="about-image animate fadeInRight">
+            <img src="img/o-nas-ilustrace.jpg" alt="O nás – WebPark Studio">
+          </div>
+        </div>
+      </section>
+      
+          <!-- Konkurenční výhody -->
+    <section class="konkurence" id="konkurence">
+        <div class="container">
+        <!-- Horní řádek: ikonka + nadpisy -->
+        <div class="konkurence">
+            <h4>Konkurenční výhody</h4>
+            <h2>Proč si vybrat právě nás?</h2>
+        </div>
+    
+        <!-- Seznam výhod -->
+        <div class="konkurence-list animate fadeInRight">
+            <div class="konkurence-item animate slide-up delay-1">
+            <img src="img/icons8-computer-100.png" alt="Moderní řešení" class="ikonka">
+            <h3>Moderní řešení</h3>
+            </div>
+            <div class="konkurence-item animate slide-up delay-2">
+            <img src="img/icons8-team-100.png" alt="Zkušený tým" class="ikonka">
+            <h3>Zkušený tým</h3>
+            </div>
+            <div class="konkurence-item animate slide-up delay-3">
+            <img src="img/icons8-reliable-100.png" alt="Spolehlivost" class="ikonka">
+            <h3>Spolehlivost</h3>
+            </div>
+            <div class="konkurence-item animate slide-up delay-4">
+            <img src="img/icons8-connect-100.png" alt="Komplexní služby" class="ikonka">
+            <h3>Komplexní služby</h3>
+            </div>
+        </div>
+        </div>
+    </section>
+      
+    
+    <!-- Služby -->
+    <section class="sluzby" id="sluzby">
+        <div class="container">
+            <h4>S čím Vám můžeme pomoci</h4>
+            <h2>Kvalitní služby pro Vaši online prezentaci</h2>
+            <div class="sluzby-karty">
+                <div class="karta-sluzby animate zoomIn">
+                    <img src="img/icons8-monitor-100.png" alt="Webové stránky">
+                    <h3>Tvorba webových</h3>
+                    <h3 class="modry-nadpis">stránek</h3>
+                    <p>Moderní, responzivní a přehledné stránky šité na míru vašim požadavkům.</p>
+                </div>
+                <div class="karta-sluzby animate zoomIn">
+                    <img src="img/icons8-e-shop-100.png" alt="E-shop">
+                    <h3>Tvorba</h3>
+                    <h3 class="modry-nadpis">e-shopů</h3>
+                    <p>Komplexní řešení e-shopů s intuitivní správou a bezpečnými platebními metodami.</p>
+                </div>
+                <div class="karta-sluzby animate zoomIn">
+                    <img src="img/icons8-design-layout-100.png" alt="Design">
+                    <h3>Grafický</h3>
+                    <h3 class="modry-nadpis">design</h3>
+                    <p>Originální vizuální identita, která vás odliší od konkurence.</p>
+                </div>
+                <div class="karta-sluzby animate zoomIn">
+                    <img src="img/icons8-organization-100.png" alt="Identita">
+                    <h3>Tvorba Firemní</h3>
+                    <h3 class="modry-nadpis">identity</h3>
+                    <p>Komplexní řešení brandingu od loga až po celkový vizuální styl.</p>
+                </div>
+                <div class="karta-sluzby animate zoomIn">
+                    <img src="img/icons8-code-100.png" alt="Copywriting">
+                    <h3>Programátorské</h3>
+                    <h3 class="modry-nadpis">práce</h3>
+                    <p>Profesionální texty, které podpoří vaši značku a zvýší konverze.</p>
+                </div>
+                <div class="karta-sluzby animate zoomIn">
+                    <img src="img/icons8-writing-100.png" alt="Programování">
+                    <h3>Psaní prodejních</h3>
+                    <h3 class="modry-nadpis">textů</h3>
+                    <p>Inovativní webové aplikace a funkcionality přesně podle vašich představ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projekty -->
+    <section class="projekty" id="projekty">
+        <div class="container">
+            <h4>Nedávné projekty</h4>
+            <h2>Podívejte se na naše realizace</h2>
+            <div class="projekty-seznam">
+                <div class="projekt animate fadeInLeft">
+                    <a href="https://pujcovnapontos.cz" target="_blank">
+                        <img src="img/projekt1.png" alt="Projekt 1">
+                        <div class="popis-projektu">
+                            <h3>Tvorba webových stránek na míru</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="projekt animate zoomIn">
+                    <img src="img/projekt2.png" alt="Projekt 2">
+                    <div class="popis-projektu">
+                        <h3>Vizitky pro klienta</h3>
+                    </div>
+                </div>
+                <div class="projekt animate fadeInRight">
+                    <img src="img/projekt3.png" alt="Projekt 3">
+                    <div class="popis-projektu">
+                        <h3>E-shop na platformě wordpress</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!-- Recenze -->
+    <section class="recenze" id="recenze">
+        <div class="container recenze-obsah animate fadeInLeft">
+            <div class="leva">
+                <h4>Recenze</h4>
+                <h2>Co o nás říkají naši klienti</h2>
+                <div class="recenze-slider">
+                    <div class="recenze-item">
+                        <p>"Spolupráce s WebPark Studio předčila naše očekávání. Web je moderní a plně funkční."</p>
+                        <span>- Jan Novák, Firma XY</span>
+                    </div>
+                    <div class="recenze-item">
+                        <p>"Díky WebPark Studio jsme získali nové zákazníky a naše online prezentace je profesionální."</p>
+                        <span>- Petra Horáková, E-shop Zelená</span>
+                    </div>
+                    <div class="recenze-item">
+                        <p>"Rychlá komunikace, kreativní řešení a skvělý výsledek. Určitě doporučuji!"</p>
+                        <span>- Martin Svoboda, IT Solutions</span>
+                    </div>
+                </div>
+                <div class="recenze-nav">
+                    <button class="prev-review btn">&laquo; Předchozí</button>
+                    <button class="next-review btn">Další &raquo;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="kontakt" id="kontakt">
+        <div class="container kontakt-obsah animate">
+            <h2>Kontaktujte nás</h2>
+            <p>Máte zájem o spolupráci? Vyplňte formulář a my se Vám co nejdříve ozveme.</p>
+            <form action="php/form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Vaše jméno" required>
+                <input type="email" name="email" placeholder="Váš e-mail" required>
+                <textarea name="message" placeholder="Vaše zpráva" required></textarea>
+                <button type="submit" class="btn">Odeslat</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer-obsah animate">
+        <div class="footer-menu">
+            <ul>
+                <li><a href="#domu">Domů</a></li>
+                <li><a href="#onas">O nás</a></li>
+                <li><a href="#konkurence">Proč právě my?</a></li>
+                <li><a href="#sluzby">Služby</a></li>
+                <li><a href="#projekty">Projekty</a></li>
+                <li><a href="#recenze">Recenze</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+        <p>&copy; <span id="currentYear"></span> WebPark Studio | Všechna práva vyhrazena</p>
+    </div>
+</footer>
+
+</body>
+</html>
